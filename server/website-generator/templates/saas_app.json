@@ -1,0 +1,66 @@
+{
+  "name": "saas-app",
+  "displayName": "SaaS Application",
+  "description": "A complete SaaS web application with dashboard, authentication, and subscription management. Built with Next.js and modern best practices.",
+  "category": "saas",
+  "techStack": ["nextjs", "tailwind", "typescript"],
+  "pages": [
+    {
+      "name": "Landing",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Build Better Products",
+          "subtitle": "The all-in-one platform for modern teams",
+          "description": "Streamline your workflow, collaborate in real-time, and ship faster with our powerful toolkit.",
+          "cta": { "text": "Start Free Trial", "href": "/signup" }
+        },
+        {
+          "type": "features",
+          "title": "Everything You Need",
+          "features": [
+            { "icon": "Zap", "title": "Lightning Fast", "description": "Optimized performance with edge caching and CDN" },
+            { "icon": "Shield", "title": "Enterprise Security", "description": "SOC 2 compliant with end-to-end encryption" },
+            { "icon": "Users", "title": "Team Collaboration", "description": "Real-time collaboration with presence indicators" },
+            { "icon": "BarChart", "title": "Advanced Analytics", "description": "Deep insights into your product metrics" }
+          ]
+        },
+        {
+          "type": "pricing",
+          "title": "Simple Pricing",
+          "plans": [
+            { "name": "Starter", "price": "$9", "period": "/month", "features": ["5 projects", "Basic analytics", "Community support"] },
+            { "name": "Pro", "price": "$29", "period": "/month", "popular": true, "features": ["Unlimited projects", "Advanced analytics", "Priority support", "Custom domains"] },
+            { "name": "Enterprise", "price": "Custom", "features": ["Everything in Pro", "SSO & SAML", "Dedicated support", "SLA guarantee"] }
+          ]
+        },
+        { "type": "cta", "title": "Ready to get started?", "cta": "Start Free Trial" }
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "layout": "dashboard",
+      "sections": [
+        { "type": "stats-row", "metrics": [{ "label": "Users", "value": "2.4K" }, { "label": "Revenue", "value": "$12.5K" }, { "label": "Active", "value": "89%" }] },
+        { "type": "chart", "title": "Revenue Overview", "chartType": "line" },
+        { "type": "recent-activity", "title": "Recent Activity" },
+        { "type": "data-table", "title": "Users", "columns": ["Name", "Email", "Status", "Joined"] }
+      ]
+    }
+  ],
+  "styles": {
+    "colors": {
+      "primary": "#6366f1",
+      "secondary": "#818cf8",
+      "accent": "#4f46e5",
+      "background": "#fafafa",
+      "surface": "#ffffff",
+      "text": "#1e293b",
+      "textMuted": "#64748b"
+    },
+    "typography": {
+      "headingFont": "Inter",
+      "bodyFont": "Inter"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "portfolio",
+  "displayName": "Portfolio / Personal",
+  "description": "A clean, minimal portfolio website to showcase your work, skills, and experience. Perfect for creatives, developers, and professionals.",
+  "category": "personal",
+  "techStack": ["react", "vite", "tailwind"],
+  "pages": [
+    {
+      "name": "Home",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Your Name",
+          "subtitle": "Creative Developer & Designer",
+          "description": "I craft beautiful digital experiences that blend design and technology.",
+          "cta": { "text": "View My Work", "href": "#projects" }
+        },
+        {
+          "type": "about",
+          "title": "About Me",
+          "content": "Passionate developer with expertise in modern web technologies. I love creating intuitive, performant, and visually stunning applications."
+        },
+        {
+          "type": "projects-grid",
+          "title": "Featured Projects",
+          "projects": [
+            { "title": "Project One", "description": "A web application built with React and Node.js", "tags": ["React", "Node.js", "MongoDB"], "image": "project1.jpg" },
+            { "title": "Project Two", "description": "Mobile-first e-commerce platform", "tags": ["Next.js", "Stripe", "Tailwind"], "image": "project2.jpg" },
+            { "title": "Project Three", "description": "AI-powered content generation tool", "tags": ["Python", "OpenAI", "FastAPI"], "image": "project3.jpg" }
+          ]
+        },
+        {
+          "type": "skills",
+          "title": "Skills & Technologies",
+          "categories": [
+            { "name": "Frontend", "skills": ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
+            { "name": "Backend", "skills": ["Node.js", "Python", "PostgreSQL", "Redis"] },
+            { "name": "Design", "skills": ["Figma", "Adobe XD", "UI/UX", "Motion"] }
+          ]
+        },
+        {
+          "type": "contact",
+          "title": "Get In Touch",
+          "description": "I'm always open to discussing new projects, creative ideas, or opportunities.",
+          "email": "hello@example.com",
+          "socials": [
+            { "name": "GitHub", "url": "https://github.com" },
+            { "name": "LinkedIn", "url": "https://linkedin.com" },
+            { "name": "Twitter", "url": "https://twitter.com" }
+          ]
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "colors": {
+      "primary": "#1a1a2e",
+      "secondary": "#16213e",
+      "accent": "#0f3460",
+      "text": "#e94560",
+      "background": "#f5f5f5"
+    },
+    "typography": {
+      "headingFont": "Inter",
+      "bodyFont": "Inter",
+      "heroSize": "4xl",
+      "sectionSize": "3xl"
+    }
+  }
+}
