@@ -1,0 +1,77 @@
+#!/bin/bash
+# EmpireOS Master Setup Script
+# Downloads the complete codebase and sets up the project
+
+set -e
+
+echo "╔═══════════════════════════════════════════════════════════════╗"
+echo "║                                                               ║"
+echo "║              EmpireOS Master — Setup Script                   ║"
+echo "║                                                               ║"
+echo "╚═══════════════════════════════════════════════════════════════╝"
+echo ""
+
+REPO_URL="https://github.com/abdalla-holmes/empire-os-master"
+BUILD_ZIP_URL="https://raw.githubusercontent.com/abdalla-holmes/empire-os-master/main/empire-os-master-build.zip"
+
+echo "📁 Setting up project structure..."
+
+# Create directories
+mkdir -p apps/macos/{app-shell,dashboard,chat-zone,agent-room,coding-zone,co-work-zone}
+mkdir -p server/{providers,voice,vision,computer-control,website-generator/{templates,tools},tools}
+mkdir -p docs
+
+echo "✅ Directories created"
+echo ""
+echo "📥 The complete source code (252 files, 87K lines) is available in:"
+echo "   empire-os-master-build.zip"
+echo ""
+echo "📋 Manual Setup Instructions:"
+echo ""
+echo "1. EXTRACT the zip file:"
+echo "   unzip empire-os-master-build.zip"
+echo ""
+echo "2. COPY Swift files to the macOS app:"
+echo "   cp build/app-shell/*.swift apps/macos/app-shell/"
+echo "   cp build/dashboard/*.swift apps/macos/dashboard/"
+echo "   cp build/chat-zone/*.swift apps/macos/chat-zone/"
+echo "   cp build/agent-room/*.swift apps/macos/agent-room/"
+echo "   cp build/coding-zone/*.swift apps/macos/coding-zone/"
+echo "   cp build/co-work-zone/*.swift apps/macos/co-work-zone/"
+echo ""
+echo "3. COPY Python files to the server:"
+echo "   cp build/server/*.py server/"
+echo "   cp build/server/providers/*.py server/providers/"
+echo "   cp build/voice/*.py server/voice/"
+echo "   cp build/vision/*.py server/vision/"
+echo "   cp build/computer-control/*.py server/computer-control/"
+echo "   cp build/website-generator/*.py server/website-generator/"
+echo "   cp build/tools/*.py server/tools/"
+echo ""
+echo "4. SETUP Python backend:"
+echo "   cd server"
+echo "   python3 -m venv .venv"
+echo "   source .venv/bin/activate"
+echo "   pip install -r requirements.txt"
+echo "   cp docs/ENV.example .env"
+echo "   # Edit .env with your API keys"
+echo ""
+echo "5. BUILD macOS app:"
+echo "   cd apps/macos"
+echo "   # Open EmpireOS.xcodeproj in Xcode"
+echo "   # Cmd+B to build, Cmd+R to run"
+echo ""
+echo "6. START backend server:"
+echo "   cd server"
+echo "   uvicorn main:app --reload --port 8000"
+echo ""
+echo "📚 Documentation:"
+echo "   README.md — Project overview and features"
+echo "   BUILD.md — Developer build guide"
+echo "   SETUP.md — Step-by-step setup instructions"
+echo "   ARCHITECTURE.md — System architecture and data flow"
+echo "   API.md — API reference for all endpoints"
+echo "   docs/ENV.example — Environment configuration template"
+echo ""
+echo "🚀 EmpireOS Master is ready to build!"
+echo ""
